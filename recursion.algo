@@ -1,0 +1,21 @@
+FUNCTION Palindrome (word)
+:BOOLEAN
+VAR
+i , n : INTEGER
+BEGIN
+    IF ( length.word <= 1) THEN
+    RETURN true 
+    ELSE 
+    let i = 0 
+    let n = length.word-1
+    IF (i>=n) THEN
+        RETURN TRUE 
+        ELSE
+        IF (word[i] = word[n]) THEN
+    RETURN Palindrome (i+1 , n-1)
+        END_IF
+    END_IF
+   RETURN FALSE
+
+    END_IF 
+END
